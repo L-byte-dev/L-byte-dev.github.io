@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import django from '../../assets/django.svg';
-import java from '../../assets/java.svg';
 import spring from '../../assets/spring.svg';
 import react from '../../assets/react.svg';
 import ProjectModal from './ProjectModal';
@@ -22,24 +21,17 @@ export default function Projects() {
         webLink: 'https://triclion01.pythonanywhere.com',
     },
     {
-        id: 2,
-        image: java,
-        title: 'Sistema Bancario',
-        description: 'El objetivo de este proyecto fue crear el back-end que simule un sistema bancario. Un cliente del banco puede tener múltiples cuentas. Los clientes pueden gestionar sus cuentas y consultar el saldo total. Las cuentas bancarias permiten depositar, retirar y consultar saldo. Hay dos tipos de cuentas: de ahorro, que generan intereses, y corriente, con posibilidad de sobregiro. El banco permitiende registrar nuevos clientes y abrir cuentas.',
-        codeLink: 'https://github.com/L-byte-dev/sistemabancario',
-    },
-    {
         id: 3,
         image: spring,
         title: 'Streaming Música',
-        description: 'El objetivo de este proyecto fue crear una aplicación back end usando el framework Spring Boot y una base de datos. La aplicación permite a los usuarios explorar una biblioteca musical, realizar búsquedas avanzadas por título, género, artista o álbum, y descubrir nuevas canciones basadas en sus preferencias. Los usuarios pueden crear perfiles con listas de reproducción personalizadas, gestionarlas (añadir/eliminar canciones, hacerlas públicas, repetir o reproducir aleatoriamente) y compartirlas con otros',
+        description: 'El objetivo de este proyecto fue crear una aplicación back end usando el framework Spring Boot y una base de datos. La aplicación permite a los usuarios explorar una biblioteca musical, realizar búsquedas avanzadas por título, género, artista o álbum, y descubrir nuevas canciones basadas en sus preferencias. Los usuarios pueden crear perfiles con listas de reproducción personalizadas, gestionarlas (añadir/eliminar canciones, hacerlas públicas, repetir o reproducir aleatoriamente) y compartirlas con otros.',
         codeLink: 'https://github.com/L-byte-dev/trabajopracticospring',
     },
     {
         id: 4,
         image: react,
         title: 'Youtube Music Podcasts',
-        description: 'El objetivo de este proyecto fue crear una aplicación con un diseño inspirado en Youtube Music. Se usa un custom hook para consumir la API audioboom y obtener los datos de los podcasts. La aplicación permite que al seleccionar un podcast se despliegue una barra de reproducción en la cual se puede pausar y adelantar o retroceder al audio, además permite crear, con un formulario, listas de reproducción, las cuales se muestra en tiempo real, ',
+        description: 'El objetivo de este proyecto fue crear una aplicación con un diseño inspirado en Youtube Music. Se usa un custom hook para consumir la API audioboom y obtener los datos de los podcasts. La aplicación permite que al seleccionar un podcast se despliegue una barra de reproducción en la cual se puede pausar y adelantar o retroceder al audio, además permite crear, con un formulario, listas de reproducción, las cuales se muestra en tiempo real.',
         codeLink: 'https://github.com/L-byte-dev/podcast-player',
         webLink: 'https://podcast-player-lake.vercel.app',
     },

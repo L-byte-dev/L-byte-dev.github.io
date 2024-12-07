@@ -28,9 +28,9 @@ export default function ProjectModal({ isOpen, toggleModal, project }) {
               <div className="w-1/4 h-px bg-gray-400"></div>
             </div>
 
-            <img className="w-full h-48 md:h-36 sm:h-24 object-contain object-center" src={project.image} alt={project.title} />
+            <img className="w-full max-h-20 md:h-36 sm:h-24 object-contain object-center" src={project.image} alt={project.title} />
 
-            <p className="text-gray-600 mb-6">{project.description}</p>
+            <p className="p-6 text-gray-600 mb-6">{project.description}</p>
 
             <div className="space-x-4">
               <a
