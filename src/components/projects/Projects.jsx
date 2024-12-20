@@ -54,6 +54,7 @@ export default function Projects() {
   };
 
   const toggleModal = (project) => {
+    window.location.hash = '#projects';
     setIsModalOpen(!isModalOpen);
     setCurrentProject(project);
   };
@@ -71,7 +72,7 @@ export default function Projects() {
                   alt={project.title}
                   className="w-full h-48 md:h-36 sm:h-24 object-contain object-center cursor-pointer"
                   onClick={() => toggleModal(project)} 
-                />
+                /> 
                 <div className="p-6">
                   <h2 className="tracking-widest text-xl title-font font-medium text-gray-400 mb-1">
                     {project.title}
