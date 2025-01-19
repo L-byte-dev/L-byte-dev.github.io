@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import ReactDOM from 'react-dom';
 
 export default function ProjectModal({ isOpen, toggleModal, project }) {
   useEffect(() => {
@@ -14,7 +15,7 @@ export default function ProjectModal({ isOpen, toggleModal, project }) {
 
   if (!isOpen) return null; 
 
-  return (
+  const modalContent = (
     <div id="portfolioModal1" className="fixed inset-0 z-50 overflow-hidden">
       <div className="flex items-center justify-center min-h-screen">
         <div className="relative bg-[#1c2a3a] rounded-lg shadow-lg max-w-4xl w-full">
@@ -45,13 +46,13 @@ export default function ProjectModal({ isOpen, toggleModal, project }) {
               </a>
               {project.webLink &&
                 <a
-                    href={project.webLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className='inline-flex text-white bg-orange-500 border-0 py-2 px-6 
-                    focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
-                    rounded-full text-lg'>                
-                    Ver Página Web
+                  href={project.webLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className='inline-flex text-white bg-orange-500 border-0 py-2 px-6 
+                  focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
+                  rounded-full text-lg'>
+                  Ver Página Web
                 </a>
               }
             </div>
@@ -59,5 +60,10 @@ export default function ProjectModal({ isOpen, toggleModal, project }) {
         </div>
       </div>
     </div>
+  );
+
+  return ReactDOM.createPortal(
+    modalContent,
+    document.getElementById('modal-root')
   );
 }
