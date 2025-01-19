@@ -54,7 +54,6 @@ export default function Projects() {
   };
 
   const toggleModal = (project) => {
-    window.location.hash = '#projects';
     setIsModalOpen(!isModalOpen);
     setCurrentProject(project);
   };
