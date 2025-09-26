@@ -1,4 +1,5 @@
 import CV from './CV.pdf'
+import foto from '../../assets/foto.jpeg'
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
           
           <div className='md:absolute md:right-0 md:top-2/4 md:-translate-y-1/2 w-full md:w-[45%] max-w-[31.25rem] mx-auto md:mx-0 overflow-hidden [box-shadow:0_1.25rem_3.75rem_rgba(249,_115,_22,_0.3)] animate-morphing order-first md:order-none'>
             <img 
-              src='https://l-byte-dev.github.io/assets/img-DkV39Vib.jpeg'
+              src={foto}
               alt='Lucas Gabriel Gómez - Desarrollador Full Stack'
               className='w-full h-auto block' 
             />
